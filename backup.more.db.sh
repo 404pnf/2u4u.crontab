@@ -1,0 +1,10 @@
+/home/apache/apps/mysql/bin/mysqldump -uroot -p9dccf462d245f55ac3e0cdb0e5401f5b shop| gzip > /backup/Mysql.Back.Up/Mysql_Dump_Others/shop.`date +%Y%m%d-%H`.sql.gz
+/home/apache/apps/mysql/bin/mysqldump -uroot -p9dccf462d245f55ac3e0cdb0e5401f5b quiz| gzip > /backup/Mysql.Back.Up/Mysql_Dump_Others/quiz.`date +%Y%m%d-%H`.sql.gz
+/home/apache/apps/mysql/bin/mysqldump -uroot -p9dccf462d245f55ac3e0cdb0e5401f5b ebook| gzip > /backup/Mysql.Back.Up/Mysql_Dump_Others/ebook.`date +%Y%m%d-%H`.sql.gz
+/home/apache/apps/mysql/bin/mysqldump -uroot -p9dccf462d245f55ac3e0cdb0e5401f5b answer| gzip > /backup/Mysql.Back.Up/Mysql_Dump_Others/answer.`date +%Y%m%d-%H`.sql.gz
+/home/apache/apps/mysql/bin/mysqldump -uroot -p9dccf462d245f55ac3e0cdb0e5401f5b babel| gzip > /backup/Mysql.Back.Up/Mysql_Dump_Others/babel.`date +%Y%m%d-%H`.sql.gz
+/home/apache/apps/mysql/bin/mysqldump -uroot -p9dccf462d245f55ac3e0cdb0e5401f5b video| gzip > /backup/Mysql.Back.Up/Mysql_Dump_Others/video.`date +%Y%m%d-%H`.sql.gz
+/home/apache/apps/mysql/bin/mysqldump -uroot -p9dccf462d245f55ac3e0cdb0e5401f5b group| gzip > /backup/Mysql.Back.Up/Mysql_Dump_Others/group.`date +%Y%m%d-%H`.sql.gz
+/home/apache/apps/mysql/bin/mysqldump -uroot -p9dccf462d245f55ac3e0cdb0e5401f5b discuz| gzip > /backup/Mysql.Back.Up/Mysql_Dump_Others/discuz.`date +%Y%m%d-%H`.sql.gz
+/home/apache/apps/mysql/bin/mysqldump -uroot -p9dccf462d245f55ac3e0cdb0e5401f5b uchome| gzip > /backup/Mysql.Back.Up/Mysql_Dump_Others/uchome.`date +%Y%m%d-%H`.sql.gz
+/home/apache/apps/mysql/bin/mysqldump -uroot -p9dccf462d245f55ac3e0cdb0e5401f5b xieq_UU| gzip > /backup/Mysql.Back.Up/Mysql_Dump_Others/xieq_UU.`date +%Y%m%d-%H`.sql.gz

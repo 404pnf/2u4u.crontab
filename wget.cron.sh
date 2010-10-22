@@ -1,0 +1,22 @@
+wget -O - -q -t 1 http://2u4u.com.cn/cron.php
+# wget -O - -q -t 1 http://zuowen.2u4u.com.cn/cron.php
+wget -O - -q -t 1 http://yuedu.2u4u.com.cn/cron.php
+wget -O - -q -t 1 http://shop.2u4u.com.cn/cron.php
+wget -O - -q -t 1 http://quiz.2u4u.com.cn/cron.php
+wget -O - -q -t 1 http://group.2u4u.com.cn/cron.php
+wget -O - -q -t 1 http://answer.2u4u.com.cn/cron.php
+wget -O - -q -t 1 http://babel.2u4u.com.cn/cron.php
+wget -O - -q -t 1 http://ebook.2u4u.com.cn/cron.php
+wget -O - -q -t 1 http://video.2u4u.com.cn/cron.php
+wget -O - -q -t 1 http://sandbox.2u4u.com.cn/cron.php
+#wget -O - -q -t 1 http://niuniu.rijiben.org/cron.php
+#wget -O - -q -t 1 http://2u4u.com.cn/vgame/time_slots_baixiaoyu
+wget -O - -q -t 1 http://pengyou.rijiben.org/cron.php
+wget -O - -q -t 1 http://book.jiaxiaoquan.com/cron.php
+#wget -O - -q -t 1 http://book.jiaxiaoquan.com/jxq/time_slots_baixiaoyu
+#wget -O - -q -t 1 http://www.tongnian.org/cron.php
+#wget -O - -q -t 1 http://www.tingda.org/cron.php
+#wget -O - -q -t 1 http://www.diantai.us/cron.php
+#wget -O - -q -t 1 http://www.ziyouwenhua.org/cron.php
+#wget -O - -q -t 1 http://www.ziyouruanjian.org/cron.php
+wget -O - -q -t 1 http://www.hcwdxx.com/cron.php
