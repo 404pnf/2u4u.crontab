@@ -1,3 +1,4 @@
+/home/apache/apps/mysql/bin/mysqldump -uroot -p9dccf462d245f55ac3e0cdb0e5401f5b 2u4u| gzip > /backup/Mysql.Back.Up/Mysql_Dump_Others/2u4u.`date +%Y%m%d-%H`.sql.gz
 /home/apache/apps/mysql/bin/mysqldump -uroot -p9dccf462d245f55ac3e0cdb0e5401f5b shop| gzip > /backup/Mysql.Back.Up/Mysql_Dump_Others/shop.`date +%Y%m%d-%H`.sql.gz
 /home/apache/apps/mysql/bin/mysqldump -uroot -p9dccf462d245f55ac3e0cdb0e5401f5b quiz| gzip > /backup/Mysql.Back.Up/Mysql_Dump_Others/quiz.`date +%Y%m%d-%H`.sql.gz
 /home/apache/apps/mysql/bin/mysqldump -uroot -p9dccf462d245f55ac3e0cdb0e5401f5b ebook| gzip > /backup/Mysql.Back.Up/Mysql_Dump_Others/ebook.`date +%Y%m%d-%H`.sql.gz
