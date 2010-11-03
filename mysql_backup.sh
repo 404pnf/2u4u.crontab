@@ -10,14 +10,14 @@
 
 # Credentials that can backup the databases
 DB_USER="root"
-DB_PASS="0220f96ff9d82ef5abfb553fab28a3d9"
+DB_PASS="9dccf462d245f55ac3e0cdb0e5401f5b"
 DB_HOST="localhost"
 
 # Binaries
 # (uncomment ECHO to achieve a "dry run" effect)
 #ECHO="/bin/echo"
-MYSQLDUMP="${ECHO} /usr/bin/mysqldump"
-BZIP2="${ECHO} /bin/bzip2"
+MYSQLDUMP="/home/apache/apps/mysql/bin/mysqldump"
+BZIP2="/usr/bin/bzip2"
 
 
 # Local directory for dump files
