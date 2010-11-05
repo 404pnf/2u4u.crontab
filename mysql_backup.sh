@@ -16,6 +16,17 @@ DB_HOST="localhost"
 # Binaries
 # (uncomment ECHO to achieve a "dry run" effect)
 #ECHO="/bin/echo"
+##########  NOTE ############
+# bxy: 
+# need to set mysql path to have mysql_backups.sh work
+#That shell script just don't work when called from cron.  But the script is correct
+# since i can run it with ether sh mysql._backup.sh or /full/path/mysql_backup.sh in bash
+# This drives me mad!
+# After search, I notice cron has a very limit knowledge of system path
+# although jean export the complied version of mysql to path
+# cron might not get it
+# so i set the MYSQL path here and call mysql with ${MYSQL} in the cmd
+# Voila!  It works!
 MYSQLDUMP="/home/apache/apps/mysql/bin/mysqldump"
 MYSQL="/home/apache/apps/mysql/bin/mysql"
 BZIP2="/usr/bin/bzip2"
