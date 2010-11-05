@@ -17,6 +17,7 @@ DB_HOST="localhost"
 # (uncomment ECHO to achieve a "dry run" effect)
 #ECHO="/bin/echo"
 MYSQLDUMP="/home/apache/apps/mysql/bin/mysqldump"
+MYSQL="/home/apache/apps/mysql/bin/mysql"
 BZIP2="/usr/bin/bzip2"
 
 
@@ -28,12 +29,12 @@ MYSQL_BACKUP_DIR=/backup/mysql/
 #####################################
 cd $MYSQL_BACKUP_DIR
 DATE=`eval date +%Y-%m-%d`
-NOW=`date +'%Y-%m-%d.%H:%M:%S'`
+NOW=`date +'%Y%m%d.%H%M%S'`
 
 # Optimize the table structure nightly
 #mysqlcheck -u$DBUSER -p$DBPASSWD -h$DBHOST -oA
 
-DBS=`mysql -u$DB_USER -p$DB_PASS -h$DB_HOST -e"show databases"`
+DBS=`${MYSQL} -u$DB_USER -p$DB_PASS -h$DB_HOST -e"show databases"`
 
 for DATABASE in $DBS
 do
