@@ -2,4 +2,5 @@
 rsync -av --delete --exclude-from="/backup/rsync.exclude.rules" /home/apache/data/ /backup/www.html.backup/
 rsync -av --delete --exclude-from="/backup/rsync.exclude.rules" /home/apache/apps/ /backup/app.backup/apps/
 rsync -av --delete --exclude-from="/backup/rsync.exclude.rules" /home/myapp/ /backup/app.backup/myapp/
+rsync -av --delete --exclude-from="/backup/rsync.exclude.rules" /root/crontab /backup/
 
