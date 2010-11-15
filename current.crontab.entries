@@ -1,0 +1,34 @@
+#每日mysql备份
+#I don't understand why this can be run using cron
+# sh mysql_backup.sh works perfectly, but cron doesn't call this sh script!
+# i checked the path in the following line, it's correct!
+# I can even do /root/crontab/mysql_backup.sh in a termnail, and it works
+# but this just don't work in cron!
+30 3 * * * sh /root/crontab/mysql_backup.sh
+
+# rsycn backup
+30 4 * * * /root/crontab/rsync.daily.sh
+30 5 1,15 * * /root/crontab/rsync.monthly.sh
+
+# cron job for drupal
+*/30 * * * * /root/crontab/wget.cron.sh
+
+#30 6 * * * /root/crontab/Mysql_Database_Dump.sh
+#30 3 * * * /root/crontab/backup.more.db.sh
+# we don't need house cleaning script since the new mysql backup script has built-in house cleaning
+# and rsync has built-in house cleaning, too
+#30 4 * * * /root/crontab/house.cleaning.sh
+
+#/home/apps
+#0 23 * * * rsync -av --ignore-errors /home/apache/apps/*  /backup/apps 
+
+#remount the protable drive before the night cron
+0 1 * * * sh /root/crontab/mount-protable.sh
+
+
+#backing up the whole site to /media/backup_web 
+#30 1 * * * rsync -avrul --ignore-errors --include-from=/root/crontab/web  /backup/rsync-2u4u-all  
+#30 2 * * * rsync -av --ignore-errors /var/www/static.files/  /backup/rsync-2u4u-all/static.files  
+
+#cacti G
+# */5 * * * * /home/apache/apps/php/bin/php /var/www/html/2u4u/cacti/poller.php  > /dev/null 2>&1 
