@@ -9,6 +9,8 @@ wget -O - -q -t 1 http://babel.2u4u.com.cn/cron.php
 wget -O - -q -t 1 http://ebook.2u4u.com.cn/cron.php
 wget -O - -q -t 1 http://video.2u4u.com.cn/cron.php
 wget -O - -q -t 1 http://sandbox.2u4u.com.cn/cron.php
+wget -O - -q -t 1 http://nce.2u4u.com.cn/cron.php
+wget -O - -q -t 1 http://store.2u4u.com.cn/cron.php
 #wget -O - -q -t 1 http://niuniu.rijiben.org/cron.php
 #wget -O - -q -t 1 http://2u4u.com.cn/vgame/time_slots_baixiaoyu
 wget -O - -q -t 1 http://pengyou.rijiben.org/cron.php
