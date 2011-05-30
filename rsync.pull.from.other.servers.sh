@@ -3,7 +3,7 @@
 # bxy: backup /var/www the whole directory because static.files is in that dir
 
 # pull /backup/ from 223 to here
-rsync -av --delete --exclude-from="/backup/rsync.exclude.rules" 223:/backup/ /backup/223.backup/
+rsync -av --delete --exclude-from="/backup-sata/rsync.exclude.rules" 223:/backup/ /backup-sata/223.backup/
 
 # bxy: notice the ending slash of source does matter
 # e.g  /home/apps/ /backup/ wouldn't create a apps directory in destination
