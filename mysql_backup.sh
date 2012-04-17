@@ -33,7 +33,7 @@ BZIP2="/usr/bin/bzip2"
 
 
 # Local directory for dump files
-MYSQL_BACKUP_DIR=/backup-sata/mysql/
+MYSQL_BACKUP_DIR=/backup-sata/2u4u.d6/mysql/
 
 #####################################
 ### Edit Below If Necessary ######### 

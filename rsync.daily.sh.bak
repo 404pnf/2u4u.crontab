@@ -11,7 +11,7 @@
 # 先复制站点的文件夹，这里用 /home/apache/data，因为 
 # /var/www/html 是它的一个soft link
 
-rsync -av --exclude-from='/backup-sata/rsync.exclude.rules' /home/apache/data/ /backup-sata/www.html.backup/2u4u.d6/
+rsync -av --exclude-from='/backup-sata/rsync.exclude.rules' /home/apache/data/ /backup-sata/www.html.backup/
 
 # bxy: notice the ending slash of source does matter
 # e.g  /home/apps/ /backup/ wouldn't create a apps directory in destination
@@ -19,18 +19,15 @@ rsync -av --exclude-from='/backup-sata/rsync.exclude.rules' /home/apache/data/ /
 
 # 备份所有自己编译的程序。这台及其，nginx, apache, php, 
 # php-cgi, mysql, xcache, swftools等都是自己编译的
-rsync -av --exclude-from='/backup-sata/rsync.exclude.rules.apps' /home/apache/apps/ /backup-sata/2u4u.d6/app.backup/apps/
+rsync -av --exclude-from='/backup-sata/rsync.exclude.rules.apps' /home/apache/apps/ /backup-sata/app.backup/apps/
 
 # 这里备份myapp下我在其它机器上编译的程序，也就是swftools
 # 这是我在223上编译的，因为可以方便用apt-get安装xpdf-* 语言包
 # 然后编译后/编译时挂上这些语言包 具体我忘了。
-rsync -av  --exclude-from='/backup-sata/rsync.exclude.rules' /home/myapp/ /backup-sata/2u4u.d6/app.backup/myapp/
+rsync -av  --exclude-from='/backup-sata/rsync.exclude.rules' /home/myapp/ /backup-sata/app.backup/myapp/
 
 # 备份crontab脚本
-rsync -av --exclude-from='/backup-sata/rsync.exclude.rules' /root/crontab /backup-sata/2u4u.d6/
+rsync -av --exclude-from='/backup-sata/rsync.exclude.rules' /root/crontab /backup-sata/
 
 # 备份drush脚本，主要是备份站点别名文件 alias.drushrc.php
-rsync -av --exclude-from='/backup-sata/rsync.exclude.rules' /root/drush /backup-sata/2u4u.d6/
-
-# 备份/etc/hosts
-rsync -av --exclude-from='/backup-sata/rsync.exclude.rules' /etc/hosts /backup-sata/2u4u.d6/
+rsync -av --exclude-from='/backup-sata/rsync.exclude.rules' /root/drush /backup-sata/
